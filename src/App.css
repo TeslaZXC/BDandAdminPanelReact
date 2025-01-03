@@ -1,0 +1,130 @@
+/* Общие стили */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+/* Шапка */
+#header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Панель пользователей с Grid */
+.userPanel {
+  background-color: #e8eaf6;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grid layout с авто-наполнением */
+  gap: 20px; /* Расстояние между карточками */
+  justify-items: center; /* Центрирование карточек по горизонтали */
+  max-width: 1200px;
+  margin: 0 auto; /* Центрирование панели */
+}
+
+/* Карточка пользователя */
+.user {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.user:hover {
+  transform: translateY(-5px);
+}
+
+.user h1 {
+  font-size: 20px;
+  color: #333;
+}
+
+.user h2 {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.user p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Главная панель */
+main {
+  padding: 20px;
+}
+
+/* Админ-страница */
+.admin-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-container h1 {
+  text-align: center;
+  color: #4caf50;
+}
+
+.admin-container input {
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.admin-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.admin-container button:hover {
+  background-color: #45a049;
+}
+
+/* Навигация */
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #4caf50;
+}
